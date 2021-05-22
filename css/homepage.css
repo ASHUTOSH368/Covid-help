@@ -1,0 +1,20 @@
+body{
+    text-align: center;
+color: cyan;
+}
+#corner{
+    background-color: red;
+    margin: 0%;
+}
+p{
+    color: black;
+}
+
+a{
+  background-color:rgb(214, 214, 247);
+  text-decoration: none;
+  border: 3px solid red; 
+ }
+table{
+    margin: auto;
+}

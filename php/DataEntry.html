@@ -1,0 +1,1402 @@
+
+
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+
+	<title>Data Entry</title>
+	
+	<style>
+	.textlabel {
+		display:block;
+		float:left;
+		clear:left;
+		width:70px;
+	}
+	.textbox {
+		display:block;
+		float:left;
+	}
+	.text {
+		height:30px;
+	}
+	.col {
+		display:block;
+		float:left;
+		width:20px;
+	}
+	</style>
+
+</head>
+
+
+<body>
+
+<form name = "files" method = "POST" action = "Admin.php">
+
+
+	<fieldset>
+		<legend>Select City</legend>
+	
+		<input type = "radio" name = "city" value = "Agra" id = "Agra" class = "radiobutton" />
+			<label for = "Agra" class = "radio label">Agra</label><br />
+		<input type = "radio" name = "city" value = "Prayagraj" id = "Prayagraj" class = "radiobutton" />
+			<label for = "Prayagraj" class = "radio label">Prayagraj</label><br />
+		<input type = "radio" name = "city" value = "Varanasi" id = "Varanasi" class = "radiobutton" />
+			<label for = "Varanasi" class = "radio label">Varanasi</label><br />
+		<input type = "radio" name = "city" value = "Lucknow" id = "Lucknow" class = "radiobutton" />
+			<label for = "Lucknow" class = "radio label">Lucknow</label><br />
+		<input type = "radio" name = "city" value = "Patna" id = "Patna" class = "radiobutton" />
+			<label for = "Patna" class = "radio label">Patna</label><br />
+		<input type = "radio" name = "city" value = "Kanpur" id = "Kanpur" class = "radiobutton" />
+			<label for = "Kanpur" class = "radio label">Kanpur</label><br />
+		<input type = "radio" name = "city" value = "Delhi" id = "Delhi" class = "radiobutton" />
+			<label for = "Delhi" class = "radio label">Delhi</label><br />
+		<input type = "radio" name = "city" value = "Ayodhya" id = "Ayodhya" class = "radiobutton" />
+			<label for = "Ayodhya" class = "radio label">Ayodhya</label><br />
+		<input type = "radio" name = "city" value = "Mathura" id = "Mathura" class = "radiobutton" />
+			<label for = "Mathura" class = "radio label">Mathura</label><br />
+		<input type = "radio" name = "city" value = "Chennai" id = "Chennai" class = "radiobutton" />
+			<label for = "Chennai" class = "radio label">Chennai</label><br />
+		<input type = "radio" name = "city" value = "Mumbai" id = "Mumbai" class = "radiobutton" />
+			<label for = "Mumbai" class = "radio label">Mumbai</label><br />
+		<input type = "radio" name = "city" value = "Ahmedabad" id = "Ahmedabad" class = "radiobutton" />
+			<label for = "Ahmedabad" class = "radio label">Ahmedabad</label><br />
+		
+	
+	</fieldset>
+
+	<fieldset>
+		<legend>Entry Type</legend>
+	
+		<input type = "radio" name = "datatype" value = "hospital" id = "Hospital" class = "radiobutton" />
+			<label for = "Hospital" class = "radio label">Covid Hospital Detail</label><br />
+		<input type = "radio" name = "datatype" value = "plasma" id = "Plasma" class = "radiobutton" />
+			<label for = "Plasma" class = "radio label">Plasma Donor Details</label><br />
+		<input type = "radio" name = "datatype" value = "oxygen" id = "Oxygen" class = "radiobutton" />
+			<label for = "Oxygen" class = "radio label">Oxygen Refilling Center Details</label><br />
+		<input type = "radio" name = "datatype" value = "ambulance" id = "Ambulance" class = "radiobutton" />
+			<label for = "Ambulance" class = "radio label">Ambulance Servise Details</label><br />
+		<input type = "radio" name = "datatype" value = "test" id = "Test" class = "radiobutton" />
+			<label for = "Test" class = "radio label">Covid Test Center Details</label><br />
+		<input type = "radio" name = "datatype" value = "medical" id = "Medical" class = "radiobutton" />
+			<label for = "Medical" class = "radio label">Medical Store Details</label><br />
+	
+	</fieldset>
+
+
+
+<fieldset>
+<legend>Upload Data</legend>
+
+		<div class = "text"><label><span class = "textlabel">Name 1</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Name1" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Contact 1</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Cont1" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Property 1</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Prop1" size = "50" />
+			</label>
+		</div>
+		
+		<div class = "text"><label><span class = "textlabel">Name 2</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Name2" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Contact 2</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Cont2" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Property 2</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Prop2" size = "50" />
+			</label>
+		</div>
+		
+		<div class = "text"><label><span class = "textlabel">Name 3</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Name3" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Contact 3</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Cont3" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Property 3</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Prop3" size = "50" />
+			</label>
+		</div>
+		
+		<div class = "text"><label><span class = "textlabel">Name 4</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Name4" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Contact 4</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Cont4" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Property 4</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Prop4" size = "50" />
+			</label>
+		</div>
+		
+		<div class = "text"><label><span class = "textlabel">Name 5</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Name5" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Contact 5</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Cont5" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Property 5</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Prop5" size = "50" />
+			</label>
+		</div>
+		
+		<div class = "text"><label><span class = "textlabel">Name 6</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Name6" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Contact 6</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Cont6" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Property 6</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Prop6" size = "50" />
+			</label>
+		</div>
+		
+		<div class = "text"><label><span class = "textlabel">Name 7</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Name7" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Contact 7</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Cont7" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Property 7</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Prop7" size = "50" />
+			</label>
+		</div>
+		
+		<div class = "text"><label><span class = "textlabel">Name 8</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Name8" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Contact 8</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Cont8" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Property 8</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Prop8" size = "50" />
+			</label>
+		</div>
+		
+		<div class = "text"><label><span class = "textlabel">Name 9</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Name9" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Contact 9</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Cont9" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Property 9</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Prop9" size = "50" />
+			</label>
+		</div>
+		
+		<div class = "text"><label><span class = "textlabel">Name 10</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Name10" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Contact 10</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Cont10" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Property 10</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Prop10" size = "50" />
+			</label>
+		</div>
+		
+		<div class = "text"><label><span class = "textlabel">Name 11</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Name11" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Contact 11</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Cont11" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Property 11</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Prop11" size = "50" />
+			</label>
+		</div>
+		
+		<div class = "text"><label><span class = "textlabel">Name 12</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Name12" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Contact 12</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Cont12" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Property 12</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Prop12" size = "50" />
+			</label>
+		</div>
+		
+		<div class = "text"><label><span class = "textlabel">Name 13</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Name13" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Contact 13</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Cont13" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Property 13</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Prop13" size = "50" />
+			</label>
+		</div>
+		
+		<div class = "text"><label><span class = "textlabel">Name 14</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Name14" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Contact 14</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Cont14" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Property 14</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Prop14" size = "50" />
+			</label>
+		</div>
+		
+		<div class = "text"><label><span class = "textlabel">Name 15</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Name15" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Contact 15</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Cont15" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Property 15</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Prop15" size = "50" />
+			</label>
+		</div>
+		
+		<div class = "text"><label><span class = "textlabel">Name 16</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Name16" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Contact 16</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Cont16" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Property 16</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Prop16" size = "50" />
+			</label>
+		</div>
+		
+		<div class = "text"><label><span class = "textlabel">Name 17</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Name17" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Contact 17</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Cont17" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Property 17</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Prop17" size = "50" />
+			</label>
+		</div>
+		
+		<div class = "text"><label><span class = "textlabel">Name 18</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Name18" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Contact 18</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Cont18" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Property 18</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Prop18" size = "50" />
+			</label>
+		</div>
+		
+		<div class = "text"><label><span class = "textlabel">Name 19</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Name19" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Contact 19</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Cont19" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Property 19</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Prop19" size = "50" />
+			</label>
+		</div>
+		
+		<div class = "text"><label><span class = "textlabel">Name 20</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Name20" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Contact 20</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Cont20" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Property 20</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Prop20" size = "50" />
+			</label>
+		</div>
+		
+		<div class = "text"><label><span class = "textlabel">Name 21</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Name21" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Contact 21</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Cont21" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Property 21</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Prop21" size = "50" />
+			</label>
+		</div>
+		
+		<div class = "text"><label><span class = "textlabel">Name 22</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Name22" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Contact 22</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Cont22" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Property 22</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Prop22" size = "50" />
+			</label>
+		</div>
+		
+		<div class = "text"><label><span class = "textlabel">Name 23</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Name23" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Contact 23</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Cont23" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Property 23</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Prop23" size = "50" />
+			</label>
+		</div>
+		
+		<div class = "text"><label><span class = "textlabel">Name 24</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Name24" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Contact 24</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Cont24" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Property 24</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Prop24" size = "50" />
+			</label>
+		</div>
+		
+		<div class = "text"><label><span class = "textlabel">Name 25</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Name25" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Contact 25</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Cont25" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Property 25</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Prop25" size = "50" />
+			</label>
+		</div>
+		
+		<div class = "text"><label><span class = "textlabel">Name 26</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Name26" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Contact 26</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Cont26" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Property 26</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Prop26" size = "50" />
+			</label>
+		</div>
+		
+		<div class = "text"><label><span class = "textlabel">Name 27</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Name27" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Contact 27</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Cont27" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Property 27</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Prop27" size = "50" />
+			</label>
+		</div>
+		
+		<div class = "text"><label><span class = "textlabel">Name 28</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Name28" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Contact 28</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Cont28" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Property 28</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Prop28" size = "50" />
+			</label>
+		</div>
+		
+		<div class = "text"><label><span class = "textlabel">Name 29</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Name29" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Contact 29</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Cont29" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Property 29</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Prop29" size = "50" />
+			</label>
+		</div>
+		
+		<div class = "text"><label><span class = "textlabel">Name 30</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Name30" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Contact 30</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Cont30" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Property 30</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Prop30" size = "50" />
+			</label>
+		</div>
+		
+		<div class = "text"><label><span class = "textlabel">Name 31</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Name31" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Contact 31</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Cont31" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Property 31</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Prop31" size = "50" />
+			</label>
+		</div>
+		
+		<div class = "text"><label><span class = "textlabel">Name 32</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Name32" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Contact 32</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Cont32" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Property 32</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Prop32" size = "50" />
+			</label>
+		</div>
+		
+		<div class = "text"><label><span class = "textlabel">Name 33</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Name33" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Contact 33</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Cont33" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Property 33</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Prop33" size = "50" />
+			</label>
+		</div>
+		
+		<div class = "text"><label><span class = "textlabel">Name 34</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Name34" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Contact 34</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Cont34" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Property 34</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Prop34" size = "50" />
+			</label>
+		</div>
+		
+		<div class = "text"><label><span class = "textlabel">Name 35</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Name35" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Contact 35</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Cont35" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Property 35</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Prop35" size = "50" />
+			</label>
+		</div>
+		
+		<div class = "text"><label><span class = "textlabel">Name 36</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Name36" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Contact 36</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Cont36" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Property 36</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Prop36" size = "50" />
+			</label>
+		</div>
+		
+		<div class = "text"><label><span class = "textlabel">Name 37</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Name37" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Contact 37</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Cont37" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Property 37</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Prop37" size = "50" />
+			</label>
+		</div>
+		
+		<div class = "text"><label><span class = "textlabel">Name 38</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Name38" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Contact 38</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Cont38" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Property 38</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Prop38" size = "50" />
+			</label>
+		</div>
+		
+		<div class = "text"><label><span class = "textlabel">Name 39</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Name39" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Contact 39</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Cont39" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Property 39</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Prop39" size = "50" />
+			</label>
+		</div>
+		
+		<div class = "text"><label><span class = "textlabel">Name 40</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Name40" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Contact 40</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Cont40" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Property 40</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Prop40" size = "50" />
+			</label>
+		</div>
+		
+		<div class = "text"><label><span class = "textlabel">Name 41</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Name41" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Contact 41</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Cont41" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Property 41</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Prop41" size = "50" />
+			</label>
+		</div>
+		
+		<div class = "text"><label><span class = "textlabel">Name 42</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Name42" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Contact 42</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Cont42" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Property 42</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Prop42" size = "50" />
+			</label>
+		</div>
+		
+		<div class = "text"><label><span class = "textlabel">Name 43</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Name43" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Contact 43</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Cont43" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Property 43</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Prop43" size = "50" />
+			</label>
+		</div>
+		
+		<div class = "text"><label><span class = "textlabel">Name 44</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Name44" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Contact 44</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Cont44" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Property 44</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Prop44" size = "50" />
+			</label>
+		</div>
+		
+		<div class = "text"><label><span class = "textlabel">Name 45</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Name45" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Contact 45</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Cont45" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Property 45</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Prop45" size = "50" />
+			</label>
+		</div>
+		
+		<div class = "text"><label><span class = "textlabel">Name 46</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Name46" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Contact 46</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Cont46" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Property 46</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Prop46" size = "50" />
+			</label>
+		</div>
+		
+		<div class = "text"><label><span class = "textlabel">Name 47</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Name47" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Contact 47</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Cont47" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Property 47</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Prop47" size = "50" />
+			</label>
+		</div>
+		
+		<div class = "text"><label><span class = "textlabel">Name 48</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Name48" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Contact 48</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Cont48" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Property 48</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Prop48" size = "50" />
+			</label>
+		</div>
+		
+		<div class = "text"><label><span class = "textlabel">Name 49</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Name49" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Contact 49</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Cont49" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Property 49</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Prop49" size = "50" />
+			</label>
+		</div>
+		
+		<div class = "text"><label><span class = "textlabel">Name 50</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Name50" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Contact 50</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Cont50" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Property 50</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Prop50" size = "50" />
+			</label>
+		</div>
+		
+		<div class = "text"><label><span class = "textlabel">Name 51</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Name51" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Contact 51</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Cont51" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Property 51</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Prop51" size = "50" />
+			</label>
+		</div>
+		
+		<div class = "text"><label><span class = "textlabel">Name 52</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Name52" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Contact 52</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Cont52" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Property 52</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Prop52" size = "50" />
+			</label>
+		</div>
+		
+		<div class = "text"><label><span class = "textlabel">Name 53</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Name53" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Contact 53</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Cont53" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Property 53</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Prop53" size = "50" />
+			</label>
+		</div>
+		
+		<div class = "text"><label><span class = "textlabel">Name 54</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Name54" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Contact 54</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Cont54" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Property 54</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Prop54" size = "50" />
+			</label>
+		</div>
+		
+		<div class = "text"><label><span class = "textlabel">Name 55</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Name55" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Contact 55</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Cont55" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Property 55</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Prop55" size = "50" />
+			</label>
+		</div>
+		
+		<div class = "text"><label><span class = "textlabel">Name 56</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Name56" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Contact 56</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Cont56" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Property 56</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Prop56" size = "50" />
+			</label>
+		</div>
+		
+		<div class = "text"><label><span class = "textlabel">Name 57</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Name57" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Contact 57</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Cont57" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Property 57</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Prop57" size = "50" />
+			</label>
+		</div>
+		
+		<div class = "text"><label><span class = "textlabel">Name 58</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Name58" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Contact 58</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Cont58" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Property 58</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Prop58" size = "50" />
+			</label>
+		</div>
+		
+		<div class = "text"><label><span class = "textlabel">Name 59</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Name59" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Contact 59</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Cont59" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Property 59</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Prop59" size = "50" />
+			</label>
+		</div>
+		
+		<div class = "text"><label><span class = "textlabel">Name 60</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Name60" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Contact 60</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Cont60" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Property 60</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Prop60" size = "50" />
+			</label>
+		</div>
+		
+		<div class = "text"><label><span class = "textlabel">Name 61</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Name61" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Contact 61</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Cont61" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Property 61</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Prop61" size = "50" />
+			</label>
+		</div>
+		
+		<div class = "text"><label><span class = "textlabel">Name 62</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Name62" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Contact 62</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Cont62" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Property 62</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Prop62" size = "50" />
+			</label>
+		</div>
+		
+		<div class = "text"><label><span class = "textlabel">Name 63</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Name63" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Contact 63</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Cont63" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Property 63</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Prop63" size = "50" />
+			</label>
+		</div>
+		
+		<div class = "text"><label><span class = "textlabel">Name 64</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Name64" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Contact 64</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Cont64" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Property 64</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Prop64" size = "50" />
+			</label>
+		</div>
+		
+		<div class = "text"><label><span class = "textlabel">Name 65</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Name65" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Contact 65</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Cont65" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Property 65</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Prop65" size = "50" />
+			</label>
+		</div>
+		
+		<div class = "text"><label><span class = "textlabel">Name 66</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Name66" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Contact 66</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Cont66" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Property 66</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Prop66" size = "50" />
+			</label>
+		</div>
+		
+		<div class = "text"><label><span class = "textlabel">Name 67</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Name67" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Contact 67</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Cont67" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Property 67</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Prop67" size = "50" />
+			</label>
+		</div>
+		
+		<div class = "text"><label><span class = "textlabel">Name 68</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Name68" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Contact 68</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Cont68" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Property 68</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Prop68" size = "50" />
+			</label>
+		</div>
+		
+		<div class = "text"><label><span class = "textlabel">Name 69</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Name69" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Contact 69</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Cont69" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Property 69</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Prop69" size = "50" />
+			</label>
+		</div>
+		
+		<div class = "text"><label><span class = "textlabel">Name 70</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Name70" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Contact 70</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Cont70" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Property 70</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Prop70" size = "50" />
+			</label>
+		</div>
+		
+		<div class = "text"><label><span class = "textlabel">Name 71</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Name71" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Contact 71</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Cont71" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Property 71</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Prop71" size = "50" />
+			</label>
+		</div>
+		
+		<div class = "text"><label><span class = "textlabel">Name 72</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Name72" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Contact 72</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Cont72" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Property 72</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Prop72" size = "50" />
+			</label>
+		</div>
+		
+		<div class = "text"><label><span class = "textlabel">Name 73</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Name73" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Contact 73</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Cont73" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Property 73</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Prop73" size = "50" />
+			</label>
+		</div>
+		
+		<div class = "text"><label><span class = "textlabel">Name 74</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Name74" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Contact 74</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Cont74" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Property 74</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Prop74" size = "50" />
+			</label>
+		</div>
+		
+		<div class = "text"><label><span class = "textlabel">Name 75</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Name75" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Contact 75</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Cont75" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Property 75</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Prop75" size = "50" />
+			</label>
+		</div>
+		
+		<div class = "text"><label><span class = "textlabel">Name 76</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Name76" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Contact 76</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Cont76" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Property 76</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Prop76" size = "50" />
+			</label>
+		</div>
+		
+		<div class = "text"><label><span class = "textlabel">Name 77</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Name77" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Contact 77</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Cont77" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Property 77</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Prop77" size = "50" />
+			</label>
+		</div>
+		
+		<div class = "text"><label><span class = "textlabel">Name 78</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Name78" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Contact 78</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Cont78" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Property 78</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Prop78" size = "50" />
+			</label>
+		</div>
+		
+		<div class = "text"><label><span class = "textlabel">Name 79</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Name79" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Contact 79</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Cont79" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Property 79</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Prop79" size = "50" />
+			</label>
+		</div>
+		
+		<div class = "text"><label><span class = "textlabel">Name 80</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Name80" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Contact 80</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Cont80" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Property 80</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Prop80" size = "50" />
+			</label>
+		</div>
+		
+		<div class = "text"><label><span class = "textlabel">Name 81</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Name81" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Contact 81</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Cont81" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Property 81</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Prop81" size = "50" />
+			</label>
+		</div>
+		
+		<div class = "text"><label><span class = "textlabel">Name 82</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Name82" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Contact 82</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Cont82" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Property 82</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Prop82" size = "50" />
+			</label>
+		</div>
+		
+		<div class = "text"><label><span class = "textlabel">Name 83</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Name83" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Contact 83</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Cont83" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Property 83</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Prop83" size = "50" />
+			</label>
+		</div>
+		
+		<div class = "text"><label><span class = "textlabel">Name 84</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Name84" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Contact 84</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Cont84" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Property 84</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Prop84" size = "50" />
+			</label>
+		</div>
+		
+		<div class = "text"><label><span class = "textlabel">Name 85</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Name85" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Contact 85</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Cont85" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Property 85</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Prop85" size = "50" />
+			</label>
+		</div>
+		
+		<div class = "text"><label><span class = "textlabel">Name 86</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Name86" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Contact 86</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Cont86" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Property 86</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Prop86" size = "50" />
+			</label>
+		</div>
+		
+		<div class = "text"><label><span class = "textlabel">Name 87</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Name87" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Contact 87</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Cont87" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Property 87</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Prop87" size = "50" />
+			</label>
+		</div>
+		
+		<div class = "text"><label><span class = "textlabel">Name 88</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Name88" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Contact 88</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Cont88" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Property 88</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Prop88" size = "50" />
+			</label>
+		</div>
+		
+		<div class = "text"><label><span class = "textlabel">Name 89</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Name89" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Contact 89</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Cont89" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Property 89</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Prop89" size = "50" />
+			</label>
+		</div>
+		
+		<div class = "text"><label><span class = "textlabel">Name 90</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Name90" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Contact 90</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Cont90" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Property 90</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Prop90" size = "50" />
+			</label>
+		</div>
+		
+		<div class = "text"><label><span class = "textlabel">Name 91</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Name91" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Contact 91</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Cont91" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Property 91</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Prop91" size = "50" />
+			</label>
+		</div>
+		
+		<div class = "text"><label><span class = "textlabel">Name 92</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Name92" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Contact 92</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Cont92" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Property 92</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Prop92" size = "50" />
+			</label>
+		</div>
+		
+		<div class = "text"><label><span class = "textlabel">Name 93</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Name93" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Contact 93</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Cont93" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Property 93</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Prop93" size = "50" />
+			</label>
+		</div>
+		
+		<div class = "text"><label><span class = "textlabel">Name 94</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Name94" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Contact 94</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Cont94" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Property 94</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Prop94" size = "50" />
+			</label>
+		</div>
+		
+		<div class = "text"><label><span class = "textlabel">Name 95</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Name95" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Contact 95</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Cont95" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Property 95</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Prop95" size = "50" />
+			</label>
+		</div>
+		
+		<div class = "text"><label><span class = "textlabel">Name 96</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Name96" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Contact 96</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Cont96" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Property 96</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Prop96" size = "50" />
+			</label>
+		</div>
+		
+		<div class = "text"><label><span class = "textlabel">Name 97</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Name97" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Contact 97</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Cont97" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Property 97</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Prop97" size = "50" />
+			</label>
+		</div>
+		
+		<div class = "text"><label><span class = "textlabel">Name 98</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Name98" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Contact 98</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Cont98" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Property 98</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Prop98" size = "50" />
+			</label>
+		</div>
+		
+		<div class = "text"><label><span class = "textlabel">Name 99</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Name99" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Contact 99</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Cont99" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Property 99</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Prop99" size = "50" />
+			</label>
+		</div>
+		
+		<div class = "text"><label><span class = "textlabel">Name 100</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Name100" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Contact 100</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Cont100" size = "50" />
+			</label>
+		</div>
+		<div class = "text"><label><span class = "textlabel">Property 100</span><span class = "col"> : </span>
+			<input type = "text" class = "textbox" name = "Prop100" size = "50" />
+			</label>
+		</div>
+		 <br />
+<input type = "submit" class = "sub" value = "Upload" />
+<input type = "reset" />
+</fieldset>
+
+</form>
+
+</body>
+
+</html>
